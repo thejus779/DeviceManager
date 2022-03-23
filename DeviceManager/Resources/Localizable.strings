@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  DeviceManger
+  
+*/
+
+"common.error" = "Error";
+"common.button.ok" = "OK";
+"common.error.coding" = "Coding Error";
+"common.error.unknown" = "Unknown Error";
+"common.error.noData" = "No data Error";
+"common.noinfo" = "No data available";
+
+"homeviewcontroller.label.header" = "DEVICES";
+"homeviewcontroller.cell.label.status" = "Status: ";
+
+"searchdevicesviewcontroller.field.placeholder" = "Search Devices...";
+
+"devicedetailsviewcontroller.label.name" = "Name";
+"devicedetailsviewcontroller.label.operatingsystem" = "Operating System";
+"devicedetailsviewcontroller.label.status" = "Status";
+"devicedetailsviewcontroller.label.status.available" = "Available";
+"devicedetailsviewcontroller.label.status.unavailable" = "Unavailable";
+"devicedetailsviewcontroller.label.size" = "Size";
