@@ -18,7 +18,7 @@ Welcome to DeviceManager app, a basic app which loads some mocked devices asynch
 1. DeviceManager uses MVVM + coordinator architecure where all data is handled at Model leve, View models respective to each view, and Controllers as Views.
 2. All routings and flows are handled by respective Coordinators.
 3. Uses local pagination on fetched devices results.
- [ Have implemented a local pagination on fetched data to load only a fixed number of data, and append more as we scroll to the bottom of grid ]
+ [ Have implemented a local pagination on fetched data to load only a fixed number of data, and append more as we scroll to the bottom of grid. For demonstrative purposes, it is only done on Home, can be implemented on searched data as well ]
 
 ## Limitations
 
@@ -28,7 +28,8 @@ Welcome to DeviceManager app, a basic app which loads some mocked devices asynch
 ## Known Issues to improve in V2
 
 1. To introduce a cache for the network calls if any.
-1. UI design can be improved drastically with good assets and some time.
+2. Implement a side menu.
+3. Better UI with some good assests and images.
 
 
 ## Usage
