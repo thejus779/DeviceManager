@@ -7,44 +7,48 @@
 
 import Foundation
 
-internal enum L10n {
+enum L10n {
     
-    internal enum Common {
-        internal static let error = "common.error".localized()
-        internal static let noinfo = "common.noinfo".localized()
-        internal enum Button {
-            internal static let ok = "common.button.ok".localized()
+    enum Common {
+        static let error = "common.error".localized()
+        static let noinfo = "common.noinfo".localized()
+        enum Button {
+            static let ok = "common.button.ok".localized()
         }
-        internal enum Error {
-            internal static let coding = "common.error.coding".localized()
-            internal static let noData = "common.error.noData".localized()
-            internal static let unknown = "common.error.unknown".localized()
+        enum Error {
+            static let coding = "common.error.coding".localized()
+            static let noData = "common.error.noData".localized()
+            static let unknown = "common.error.unknown".localized()
         }
     }
-    internal enum Homeviewcontroller {
-        internal enum Label {
-            internal static let header = "homeviewcontroller.label.header".localized()
+    enum Homeviewcontroller {
+        enum Label {
+            static let header = "homeviewcontroller.label.header".localized()
         }
-        internal enum Cell {
-            internal enum Label {
-                internal static let status = "homeviewcontroller.cell.label.status".localized()
+        enum Cell {
+            enum Label {
+                static let status = "homeviewcontroller.cell.label.status".localized()
             }
         }
     }
-    internal enum Searchdevicesviewcontroller {
-        internal enum Field {
-            internal static let placeholder = "searchdevicesviewcontroller.field.placeholder".localized()
+    enum Searchdevicesviewcontroller {
+        enum Field {
+            static let placeholder = "searchdevicesviewcontroller.field.placeholder".localized()
+        }
+        enum Label {
+            static let nodata = "searchdevicesviewcontroller.label.nodata".localized()
+            static let search = "searchdevicesviewcontroller.label.search".localized()
         }
     }
-    internal enum Devicedetailsviewcontroller {
-        internal enum Label {
-            internal static let name = "devicedetailsviewcontroller.label.name".localized()
-            internal static let operatingsystem = "devicedetailsviewcontroller.label.operatingsystem".localized()
-            internal static let status = "devicedetailsviewcontroller.label.status".localized()
-            internal static let size = "devicedetailsviewcontroller.label.size".localized()
-            internal enum Status {
-                internal static let available = "devicedetailsviewcontroller.label.status.available".localized()
-                internal static let unavailable = "devicedetailsviewcontroller.label.status.unavailable".localized()
+    enum Devicedetailsviewcontroller {
+        enum Label {
+            static let name = "devicedetailsviewcontroller.label.name".localized()
+            static let operatingsystem = "devicedetailsviewcontroller.label.operatingsystem".localized()
+            static let status = "devicedetailsviewcontroller.label.status".localized()
+            static let size = "devicedetailsviewcontroller.label.size".localized()
+            enum Status {
+                static let available = "devicedetailsviewcontroller.label.status.available".localized()
+                static let unavailable = "devicedetailsviewcontroller.label.status.unavailable".localized()
             }
         }
     }

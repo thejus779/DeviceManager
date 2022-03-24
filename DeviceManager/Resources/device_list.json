@@ -25,7 +25,7 @@
     "id": 3,
     "is_avalable": false,
     "operating_system": "Android 9",
-    "name": "Samsung Galaxy S9",
+    "name": "Samsung Galaxy a7",
     "image_url": "https://images.samsung.com/is/image/samsung/p5/fr/smartphones/galaxy-s20/s20-fe-buy/carousel-kv/009_sku_kv/mo/S20-FE_Navy_SKUimage.jpg?imwidth=720",
     "size": {
       "height": 1600,
@@ -58,7 +58,7 @@
     "id": 6,
     "is_avalable": true,
     "operating_system": "Android 9",
-    "name": "Samsung Galaxy S9",
+    "name": "Samsung Galaxy X12",
     "image_url": "https://www.lense.fr/wp-content/uploads/2019/02/samsung-galaxy-s10-photo-690x690.jpg",
     "size": {
       "height": 1600,
@@ -120,4 +120,114 @@
       "width": 1000
     }
   },
+  {
+    "id": 12,
+    "is_avalable": true,
+    "operating_system": "Android 10 New",
+    "name": "Samsung Galaxy",
+    "image_url": "https://www.istockphoto.com/fr/photo/le-nouveau-phare-de-samsung-galaxy-s20-ultra-gm1211859030-351610663",
+    "size": {
+      "height": 1600,
+      "width": 900
+    }
+  },
+  {
+    "id": 13,
+    "is_avalable": true,
+    "operating_system": "Android 9 Old",
+    "name": "Samsung Galaxy 1S9",
+    "image_url": "https://images.samsung.com/is/image/samsung/p5/fr/smartphones/galaxy-s20/s20-fe-buy/carousel-kv/009_sku_kv/mo/S20-FE_Navy_SKUimage.jpg?imwidth=720",
+    "size": {
+      "height": 1600,
+      "width": 1000
+    }
+  },
+  {
+    "id": 14,
+    "is_avalable": false,
+    "operating_system": "iOS 15.1",
+    "name": "iPhone 14 pro",
+    "image_url": "Germany, France",
+    "size": {
+      "height": 1600,
+      "width": 1800
+    }
+  },
+  {
+    "id": 15,
+    "is_avalable": true,
+    "operating_system": "Android 19",
+    "name": "Samsung Galaxy S90",
+    "image_url": "https://images.samsung.com/is/image/samsung/p5/fr/smartphones/galaxy-s20/s20-fe-buy/carousel-kv/009_sku_kv/mo/S20-FE_Navy_SKUimage.jpg?imwidth=720",
+    "size": {
+      "height": 1600,
+      "width": 1000
+    }
+  },
+  {
+    "id": 16,
+    "is_avalable": false,
+    "operating_system": "Android 19",
+    "name": "Samsung Galaxy J55",
+    "image_url": "https://www.lense.fr/wp-content/uploads/2019/02/samsung-galaxy-s10-photo-690x690.jpg",
+    "size": {
+      "height": 1600,
+      "width": 1000
+    }
+  },
+  {
+    "id": 17,
+    "is_avalable": true,
+    "operating_system": "Android 11",
+    "name": "Samsung Galaxy S20",
+    "image_url": "https://socialcompare.com/u/1903/samsung-galaxy-s10-1_c8f2e3284e94257ae5285a2736343971.jpg",
+    "size": {
+      "height": 1600,
+      "width": 1000
+    }
+  },
+  {
+    "id": 18,
+    "is_avalable": true,
+    "operating_system": "iOS 13.3",
+    "name": "iPhone XS",
+    "image_url": "https://www.backmarket.fr/cdn-cgi/image/format=auto,quality=75,width=640/https://d1eh9yux7w8iql.cloudfront.net/product_images/290062_b77cfcbd-dc81-4b01-be44-34fa18d8e966.jpg",
+    "size": {
+      "height": 1600,
+      "width": 900
+    }
+  },
+  {
+    "id": 19,
+    "is_avalable": true,
+    "operating_system": "iOS 15",
+    "name": "iPhone SE 2nd Gen",
+    "image_url": "https://pic.clubic.com/v1/images/1789938/raw",
+    "size": {
+      "height": 900,
+      "width": 700
+    }
+  },
+  {
+    "id": 20,
+    "is_avalable": true,
+    "operating_system": "iOS 14",
+    "name": "iPhone 12",
+    "image_url": "https://images.unsplash.com/photo-1607936854279-55e8a4c64888?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aXBob25lJTIwMTJ8ZW58MHx8MHx8&w=1000&q=80",
+    "size": {
+      "height": 2000,
+      "width": 900
+    }
+  },
+  {
+    "id": 21,
+    "is_avalable": false,
+    "operating_system": "iOS 14.1",
+    "name": "iPhone 13 pro Max",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy0bDm-rkuQJk7q2adX8xEgrPzUtEN7uw3jA&usqp=CAU",
+    "size": {
+      "height": 1600,
+      "width": 1000
+    }
+  }
 ]

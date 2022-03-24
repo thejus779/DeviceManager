@@ -10,6 +10,7 @@ import UIKit
 
 internal enum Assets {
     internal static let devicePlaceholder = ImageAsset(name: "icon_device_placeholder")
+    internal static let iconInfo = ImageAsset(name: "icon_info")
 }
 
 internal struct ImageAsset {

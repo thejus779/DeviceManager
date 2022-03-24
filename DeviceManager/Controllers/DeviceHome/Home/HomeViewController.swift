@@ -60,18 +60,29 @@ class HomeViewController: UIViewController, Spawnable, DeviceCellProtocol {
 // MARK: - TableViewDelegates and Datasource
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.allDevices.count
+        viewModel.allDisplayableDevices.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = cellForRow(at: indexPath)
         cell.configure(
             viewModel: DeviceCellViewModel(
-                device: viewModel.allDevices[indexPath.row]
+                device: viewModel.allDisplayableDevices[indexPath.row]
             )
         )
+        // Local pagination, Last cell reached, load more data if needed
+        if indexPath.item == viewModel.allDisplayableDevices.count - 1 {
+            loadMore()
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        homeCoordinatorDelegate?.showDetails(for: viewModel.allDevices[indexPath.row])
+        homeCoordinatorDelegate?.showDetails(for: viewModel.allDisplayableDevices[indexPath.row])
+    }
+    private func loadMore() {
+        viewModel.loadMoreDisplayableDevices { [weak self] finished in
+            if !finished {
+                self?.reloadData()
+            }
+        }
     }
 }

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -28,27 +29,27 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c8p-FZ-5Xb">
-                                <rect key="frame" x="112" y="42" width="209" height="44.5"/>
+                                <rect key="frame" x="112" y="42" width="213" height="44.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZT-2e-4un">
-                                        <rect key="frame" x="0.0" y="0.0" width="209" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="213" height="19.5"/>
                                         <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQV-jY-S54">
-                                        <rect key="frame" x="0.0" y="27.5" width="209" height="17"/>
+                                        <rect key="frame" x="0.0" y="27.5" width="213" height="17"/>
                                         <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QZ1-Zx-KiO">
-                                <rect key="frame" x="337" y="44" width="40" height="40"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_info" translatesAutoresizingMaskIntoConstraints="NO" id="QZ1-Zx-KiO">
+                                <rect key="frame" x="341" y="48" width="32" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="T1l-2A-E5u"/>
-                                    <constraint firstAttribute="width" constant="40" id="lOf-PJ-87B"/>
+                                    <constraint firstAttribute="height" constant="32" id="T1l-2A-E5u"/>
+                                    <constraint firstAttribute="width" constant="32" id="lOf-PJ-87B"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -61,7 +62,7 @@
                             <constraint firstItem="LK9-tB-HJm" firstAttribute="leading" secondItem="R4r-Y7-48L" secondAttribute="leading" constant="8" id="Xc7-lY-kdQ"/>
                             <constraint firstItem="QZ1-Zx-KiO" firstAttribute="centerY" secondItem="R4r-Y7-48L" secondAttribute="centerY" id="gUN-Z7-J5X"/>
                             <constraint firstItem="QZ1-Zx-KiO" firstAttribute="leading" secondItem="c8p-FZ-5Xb" secondAttribute="trailing" constant="16" id="jYZ-Ep-tcg"/>
-                            <constraint firstAttribute="trailing" secondItem="QZ1-Zx-KiO" secondAttribute="trailing" constant="8" id="lcf-8H-geS"/>
+                            <constraint firstAttribute="trailing" secondItem="QZ1-Zx-KiO" secondAttribute="trailing" constant="12" id="lcf-8H-geS"/>
                             <constraint firstAttribute="bottom" secondItem="LK9-tB-HJm" secondAttribute="bottom" constant="20" id="pOc-QO-IYH"/>
                             <constraint firstItem="LK9-tB-HJm" firstAttribute="centerY" secondItem="R4r-Y7-48L" secondAttribute="centerY" id="pe2-Ho-9Z6"/>
                             <constraint firstItem="c8p-FZ-5Xb" firstAttribute="centerY" secondItem="LK9-tB-HJm" secondAttribute="centerY" id="xNA-ug-BAC"/>
@@ -86,6 +87,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="icon_info" width="1200" height="1200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

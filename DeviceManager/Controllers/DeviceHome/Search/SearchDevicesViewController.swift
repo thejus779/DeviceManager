@@ -10,6 +10,7 @@ import UIKit
 class SearchDevicesViewController: UIViewController, Spawnable, DeviceCellProtocol {
     
     @IBOutlet private var searchBarView: UISearchBar!
+    @IBOutlet private weak var noDataLabel: UILabel!
     @IBOutlet internal weak var tableView: UITableView!
     
     private var viewModel: SearchDeviceViewModel!
@@ -23,20 +24,25 @@ class SearchDevicesViewController: UIViewController, Spawnable, DeviceCellProtoc
         controller.viewModel = viewModel
         return controller
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: true)
-        
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.titleView = searchBarView
         searchBarView.searchTextField.backgroundColor = .white
-        searchBarView.searchTextField.becomeFirstResponder()
+        
         registerCell(cell: DeviceTableViewCell.self)
+        reloadData()
+        
         setAccessibilityIdentifiers()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        searchBarView.searchTextField.becomeFirstResponder()
     }
     
     private func setAccessibilityIdentifiers() {
@@ -44,10 +50,17 @@ class SearchDevicesViewController: UIViewController, Spawnable, DeviceCellProtoc
     }
     // Reload data
     private func reloadData() {
+        tableView.isHidden = viewModel.searchedDevices.isEmpty
         tableView.reloadData()
+        
+        noDataLabel.text = searchBarView.searchTextField.text?.isEmpty ?? true
+        ?  L10n.Searchdevicesviewcontroller.Label.search
+        : L10n.Searchdevicesviewcontroller.Label.nodata
+        noDataLabel.isHidden = !viewModel.searchedDevices.isEmpty
     }
     
     private func loadData(with query: String) {
+        noDataLabel.isHidden = true
         viewModel.searchDevices(with: query) { [weak self] result in
             switch result {
             case .success:

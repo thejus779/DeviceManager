@@ -56,7 +56,6 @@ extension DeviceDetailsViewController: UITableViewDelegate, UITableViewDataSourc
         
         cell.textLabel?.text = viewModel.allDisplayableInfo[indexPath.row].localizedString
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        cell.textLabel?.textAlignment = .center
         cell.selectionStyle = .none
         return cell
     }

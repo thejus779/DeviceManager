@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Device: Codable {
+struct Device: Codable, Equatable {
     let id: Int
     let isAvailable: Bool
     let operatingSystem: String
@@ -28,9 +28,9 @@ struct Device: Codable {
         case size
     }
 }
-//// Equatable conformance
-//extension Device {
-//    static func == (lhs: Device, rhs: Device) -> Bool {
-//        lhs.id == rhs.id
-//    }
-//}
+// Equatable conformance
+extension Device {
+    static func == (lhs: Device, rhs: Device) -> Bool {
+        lhs.id == rhs.id
+    }
+}
