@@ -53,6 +53,7 @@
 		534A2F8D27EBDED3000BBC54 /* DeviceDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A2F8C27EBDED3000BBC54 /* DeviceDetailsViewModelTests.swift */; };
 		534A2F9027EBE0E6000BBC54 /* DeviceHomeIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A2F8F27EBE0E6000BBC54 /* DeviceHomeIntegrationTest.swift */; };
 		534A2F9227EBE465000BBC54 /* CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A2F9127EBE465000BBC54 /* CellRegistration.swift */; };
+		534A2F9427EBE706000BBC54 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 534A2F9327EBE706000BBC54 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		534A2F8C27EBDED3000BBC54 /* DeviceDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		534A2F8F27EBE0E6000BBC54 /* DeviceHomeIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHomeIntegrationTest.swift; sourceTree = "<group>"; };
 		534A2F9127EBE465000BBC54 /* CellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRegistration.swift; sourceTree = "<group>"; };
+		534A2F9327EBE706000BBC54 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		534A2EDF27EA2DDA000BBC54 = {
 			isa = PBXGroup;
 			children = (
+				534A2F9327EBE706000BBC54 /* README.md */,
 				534A2EEA27EA2DDA000BBC54 /* DeviceManager */,
 				534A2F0127EA2DDC000BBC54 /* DeviceManagerTests */,
 				534A2F0B27EA2DDC000BBC54 /* DeviceManagerUITests */,
@@ -615,6 +618,7 @@
 				534A2EF827EA2DDC000BBC54 /* LaunchScreen.storyboard in Resources */,
 				534A2F7127EA9C81000BBC54 /* Localizable.strings in Resources */,
 				534A2EF527EA2DDC000BBC54 /* Assets.xcassets in Resources */,
+				534A2F9427EBE706000BBC54 /* README.md in Resources */,
 				534A2EF327EA2DDA000BBC54 /* Main.storyboard in Resources */,
 				534A2F3A27EA331F000BBC54 /* device_list.json in Resources */,
 				534A2F6D27EA9503000BBC54 /* DeviceTableViewCell.xib in Resources */,
@@ -783,7 +787,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -838,7 +842,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -861,6 +865,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -887,6 +892,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -908,7 +914,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thejus.DeviceManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -927,7 +933,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thejus.DeviceManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
